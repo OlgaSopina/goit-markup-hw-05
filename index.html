@@ -28,7 +28,7 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Студия</a>
+                        <a class="nav-link current" href="./index.html">Студия</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Портфолио</a>
@@ -58,7 +58,7 @@
         <section class="cap">
             <div class="container">
                 <h1 class="cap-link hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br /> ДЛЯ ВАШЕГО БИЗНЕСА </h1>
-                <button type="button" class="button-accent">Заказать услугу</button>
+                <button type="button" class="button-accent" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Особенности-->
@@ -112,12 +112,21 @@
                 <ul class="doing-list ">
                     <li class="doing-item ">
                         <img class="doing-photo" src="./images/survey1.jpg " alt="фото " width="370 " height="294 ">
+                        <div class="doing-item-label">
+                            <p class="doing-text">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="doing-item ">
                         <img class="doing-photo" src="./images/survey2.jpg " alt="фото " width="370 " height="294 ">
+                        <div class="doing-item-label">
+                            <p class="doing-text">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="doing-item ">
                         <img class="doing-photo" src="./images/survey3.jpg " alt="фото " width="370 " height="294 ">
+                        <div class="doing-item-label">
+                            <p class="doing-text">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -401,7 +410,15 @@
             </div>
         </div>
     </footer>
-
+    <!--Модельное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="model-close" type="button" data-modal-close>
+       X
+      </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
